@@ -11,15 +11,6 @@ const channels = [
     { icon: Github, label: "GitHub", value: "github.com/harinarayananpari", href: "https://github.com/" },
 ];
 export function Contact() {
-    // const [sent, setSent] = useState(false);
-    // const onSubmit = (e) => {
-    //     e.preventDefault();
-    //     const data = new FormData(e.currentTarget);
-    //     const subject = encodeURIComponent(`Portfolio inquiry from ${data.get("name") ?? ""}`);
-    //     const body = encodeURIComponent(`${data.get("message") ?? ""}\n\n— ${data.get("name") ?? ""} (${data.get("email") ?? ""})`);
-    //     window.location.href = `mailto:harinarayananpari@gmail.com?subject=${subject}&body=${body}`;
-    //     setSent(true);
-    // };
       const [sent, setSent] = useState(false);
       const [loading, setLoading] = useState(false);
 
