@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
-export function MagneticButton({ children, href, onClick, variant = "primary", download, type, className = "" }) {
+export function MagneticButton({ children, href, onClick, variant = "primary", download, target, type, className = "" }) {
     const ref = useRef(null);
     const onMove = (e) => {
         const el = ref.current;
@@ -24,7 +24,7 @@ export function MagneticButton({ children, href, onClick, variant = "primary", d
       {children}
     </motion.div>);
     if (href) {
-        return (<a href={href} download={download} className="group inline-block" onClick={onClick}>
+        return (<a href={href} download={download} target={target} className="group inline-block" onClick={onClick}>
         {inner}
       </a>);
     }

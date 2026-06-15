@@ -4,6 +4,7 @@ import { ArrowRight, Download, MapPin, Sparkles } from "lucide-react";
 import { MagneticButton } from "./MagneticButton";
 import { SearchChatbox } from "./SearchChatbox";
 const phrases = [
+    "Full-stack Websites & APIs",
     "Scalable AI Systems",
     "LLM Integrations",
     "Fintech-Grade Backends",
@@ -42,7 +43,7 @@ export function Hero() {
     return (<section id="top" className="relative min-h-screen overflow-hidden pt-32 pb-20">
       <Beams />
       <div className="relative mx-auto max-w-6xl px-4">
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.4 }} className="mx-auto mt-10 max-w-lg px-2">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.4 }} className="mx-auto mt-0 max-w-lg px-2">
           <SearchChatbox />
         </motion.div>
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="mx-auto flex max-w-fit items-center gap-2 rounded-full border border-border glass px-4 py-1.5 text-xs text-muted-foreground">
@@ -50,7 +51,7 @@ export function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75"/>
             <span className="relative inline-flex h-2 w-2 rounded-full bg-primary"/>
           </span>
-          Available for senior backend & AI engineering roles
+          Available for senior Full-stack & AI engineering roles
         </motion.div>
 
         <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="mt-8 text-center font-display text-5xl font-semibold tracking-tight sm:text-6xl md:text-7xl lg:text-[88px] lg:leading-[1.02]">
@@ -80,7 +81,7 @@ export function Hero() {
           <MagneticButton href="#contact" variant="ghost">
             Contact Me
           </MagneticButton>
-          <MagneticButton href="/resume.pdf" variant="ghost" download>
+          <MagneticButton href="/resume.pdf" variant="ghost" download target="_blank">
             <Download className="h-4 w-4"/> Resume
           </MagneticButton>
         </motion.div>
@@ -88,7 +89,7 @@ export function Hero() {
         {/* Floating tech chips */}
         <div aria-hidden className="pointer-events-none mt-20 hidden md:block">
           <div className="relative h-32">
-            {["Python", "Next.js", "Flask", "OpenAI", "Gemini", "Elasticsearch", "MongoDB", "AWS"].map((t, i) => (<motion.div key={t} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 + i * 0.06, duration: 0.6 }} className="absolute animate-float rounded-full border border-border glass px-3 py-1 text-xs text-muted-foreground" style={{
+            {["Python", "React.js", "Flask/Django", "LLM", "RAG", "Postgresql", "MongoDB", "AWS/AZURE", "AI/ML"].map((t, i) => (<motion.div key={t} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.6 + i * 0.06, duration: 0.6 }} className="absolute animate-float rounded-full border border-border glass px-3 py-1 text-xs text-muted-foreground" style={{
                 left: `${4 + i * 12}%`,
                 top: `${(i % 3) * 28}px`,
                 animationDelay: `${i * 0.4}s`,
