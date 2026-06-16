@@ -27,6 +27,18 @@ export function SearchChatbox() {
         if (isOpen)
             chatInputRef.current?.focus();
     }, [isOpen]);
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const { data } = await api.get("/");
+          console.log(data); // "API Running"
+        } catch (err) {
+          console.error(err);
+        }
+      };
+
+      fetchData();
+    }, []);
     const handleSendMessage = async () => {
         const text = inputValue.trim();
         if (!text || isLoading)
