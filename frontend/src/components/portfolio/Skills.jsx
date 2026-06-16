@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { Section } from "./Section";
 import { Boxes, Cloud, Code2, Cpu, Server } from "lucide-react";
 const groups = [
-    { icon: Server, title: "Backend Engineering", items: ["Python", "Flask", "Django", "REST APIs", "System Design"] },
+    { icon: Server, title: "Backend Engineering", items: ["Python", "Flask", "Django", "REST APIs", "System Design", "Node.js"] },
     { icon: Code2, title: "Frontend", items: ["React.js", "Next.js", "TypeScript", "Tailwind CSS"] },
     { icon: Cpu, title: "AI & Search Systems", items: ["OpenAI APIs", "Gemini APIs", "LLM Integration", "Prompt Engineering", "RAG", "Elasticsearch", "Fuzzy Matching"] },
     { icon: Cloud, title: "Databases & Cloud", items: ["MongoDB", "PostgreSQL", "AWS S3", "Azure Blob"] },
-    { icon: Boxes, title: "Architecture", items: ["ETL Pipelines", "Data Validation", "Batch Processing", "Scalable Systems"] },
+    { icon: Boxes, title: "Architecture", items: ["ETL Pipelines", "Data Validation", "Batch Processing", "Scalable Systems", "System Design(HLD & LLD)"] },
 ];
 export function Skills() {
     return (<Section id="skills" eyebrow="Capabilities" title={<>The <span className="text-gradient-primary">technical stack</span> I ship with</>} description="A focused toolkit refined across real production systems — not a laundry list.">

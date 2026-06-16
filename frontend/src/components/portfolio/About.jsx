@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Section } from "./Section";
-import { Brain, Database, Layers, Search } from "lucide-react";
+import { Brain, Database, Layers, Search, PuzzleIcon } from "lucide-react";
 const pillars = [
     { icon: Brain, label: "LLM Integrations", desc: "OpenAI · Gemini · RAG · Prompt systems" },
+    { icon: PuzzleIcon, label: "System Design", desc: "Distributed systems · Scalability · Reliability" },
     { icon: Search, label: "Search Infra", desc: "Elasticsearch · Fuzzy matching at scale" },
     { icon: Database, label: "Data Pipelines", desc: "ETL · Batch processing · Validation" },
     { icon: Layers, label: "Cloud Architecture", desc: "AWS S3 · Azure Blob · Cloud-agnostic" },
@@ -12,7 +13,7 @@ export function About() {
       <div className="grid gap-8 lg:grid-cols-5">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="lg:col-span-3 space-y-5 text-base leading-relaxed text-muted-foreground">
           <p>
-            I'm a <span className="text-foreground font-medium">Backend & AI Systems Engineer</span> with 2+ years
+            I'm a <span className="text-foreground font-medium">Full-Stack & AI Systems Engineer</span> with 2+ years
             spent inside startup environments where ambiguity is the default and shipping is the only currency.
             My focus: architecting <span className="text-foreground">scalable AI-driven SaaS</span> and fintech
             infrastructure that holds up under real volume.
@@ -20,9 +21,22 @@ export function About() {
           <p>
             At <span className="text-foreground">Finkraft.ai</span> I designed an end-to-end invoice
             intelligence pipeline that has processed <span className="text-foreground">200,000+ documents</span>,
-            reconciled <span className="text-foreground">₹13+ crore</span> in GST value, and quietly removed
-            ~40% of the manual validation burden from operators.
+            reconciled <span className="text-foreground">₹250+ crore</span> in GST value, and quietly removed
+            ~90% of the manual validation burden from operators.
           </p>
+          <p>
+            Developed an <span className="text-foreground">AI-powered chatbot</span> using OpenAI APIs and built a <span className="text-foreground">cloud-agnostic bulk file download solution</span>
+            _integrating AWS S3, Azure Blob Storage, asset links, automated ZIP generation, and Zoho Mail-based delivery
+            workflows.
+          </p>
+          <p>
+            Developed an automated <span className="text-foreground">vendor follow-up email system</span> using SendGrid and <span className="text-foreground">email scraping system</span>, streamlining
+            invoice collection workflows and reducing manual communication efforts.
+          </p>
+          {/* <p>
+            Developed <span className="text-foreground">full-stack web applications</span> for vendor invoice collection, data visualization, and operational dashboards
+            using React.js and Flask.
+          </p> */}
           <p>
             I'm at my best where <span className="text-foreground">LLMs, search systems, and distributed
             backends</span> intersect — turning fuzzy real-world data into deterministic business outcomes.

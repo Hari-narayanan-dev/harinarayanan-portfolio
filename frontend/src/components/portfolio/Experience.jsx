@@ -3,25 +3,30 @@ import { Section } from "./Section";
 import { Counter } from "./Counter";
 import { Building2, CheckCircle2 } from "lucide-react";
 const achievements = [
-    "Architected the AI-powered invoice processing pipeline from scratch",
-    "Built Elasticsearch fuzzy matching for vendor & invoice reconciliation",
+    "Architected and Built the end-to-end AI-powered Document (invoice) processing pipeline from scratch",
+    "Built Elasticsearch fuzzy matching for vendor & invoice reconciliation microservice",
     "Integrated OpenAI and Gemini APIs with cost-aware fallback logic",
     "Designed scalable backend batch processing services",
-    "Led AWS S3 → Azure Blob migration with zero downtime",
+    "Developed an automated vendor follow-up email system using SendGrid and email scraping system, streamlining invoice collection workflows and reducing manual communication efforts.",
+    "Developed full-stack web applications for vendor invoice collection, data visualization, and operational dashboards using React.js and Flask.",
     "Designed cloud-agnostic download & storage abstractions",
+    "Led migration from AWS S3 to Azure Blob Storage as a cost-optimization initiative, reducing infrastructure expenses while implementing high-volume batch processing systems with structured logging and observability.",
+    "Leveraged AI-assisted development tools including Cursor, GitHub Copilot, and Antigravity.",
 ];
+
 const achievements_intern = [
     "Developed an AI-powered chatbot using OpenAI APIs to answer user queries about company products and services by integrating with the organization's knowledge base.",
     "Engineered a cloud-agnostic bulk file download platform integrating AWS S3, Azure Blob Storage, and external asset sources with automated ZIP generation and email-based delivery.",
     "Created postman flow for API testing and documentation.",
     "Performed R&D on AI-driven invoice parsing solutions combined with rule-based validation mechanisms to enhance data reliability.",
     "Worked on Internal portal development using React and Tailwind CSS to streamline team workflows and provide real-time insights into system performance.",
+    "Converted from Full-stack Intern to Full-Time based on strong performance and contributions to core product development initiatives."
 ];
 const stats = [
     { value: 200000, suffix: "+", label: "Invoices processed" },
-    { value: 13, prefix: "₹", suffix: "+ Cr", label: "GST value reconciled" },
-    { value: 30, suffix: "%", label: "Accuracy uplift" },
-    { value: 40, suffix: "%", label: "Manual effort removed" },
+    { value: 250, prefix: "₹", suffix: "+ Cr", label: "GST value reconciled" },
+    { value: 70, suffix: "%", label: "Accuracy" },
+    { value: 90, suffix: "%", label: "Manual effort removed" },
 ];
 export function Experience() {
     return (<Section id="experience" eyebrow="Experience" title={<>Real systems. <span className="text-gradient-primary">Real impact.</span></>} description="Two years of compounding work — measured in invoices reconciled, hours returned, and rupees saved.">
@@ -44,10 +49,10 @@ export function Experience() {
             <div className="flex flex-wrap items-baseline justify-between gap-2">
               <div>
                 <div className="font-display text-xl font-semibold">Software Developer</div>
-                <div className="text-sm text-muted-foreground">Finkraft.ai · Backend & AI Systems Focus</div>
+                <div className="text-sm text-muted-foreground">Finkraft.ai · Full-stack & AI Systems Focus</div>
               </div>
               <div className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
-                Jul 2024 — Present
+                Jul 2024 — Apr 2026
               </div>
             </div>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
@@ -72,7 +77,7 @@ export function Experience() {
                 <div className="text-sm text-muted-foreground">Finkraft.ai · Internship</div>
               </div>
               <div className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
-                Jul 2024 — Present
+                Apr 2024 - Jul 2024
               </div>
             </div>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">

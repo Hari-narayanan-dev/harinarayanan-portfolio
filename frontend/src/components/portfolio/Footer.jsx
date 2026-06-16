@@ -17,7 +17,6 @@ export function Footer() {
           <div className="flex items-center gap-3 md:justify-end">
             <Social href="mailto:harinarayananpari@gmail.com" icon={Mail}/>
             <Social href="https://www.linkedin.com/in/harinarayanan-pari" icon={Linkedin}/>
-            <Social href="https://hari-narayanan-portfolio.web.app/" icon={Globe}/>
             <Social href="https://github.com/" icon={Github}/>
           </div>
         </div>

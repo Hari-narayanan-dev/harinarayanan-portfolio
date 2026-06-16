@@ -7,7 +7,6 @@ import { MagneticButton } from "./MagneticButton";
 const channels = [
     { icon: Mail, label: "Email", value: "harinarayananpari@gmail.com", href: "mailto:harinarayananpari@gmail.com" },
     { icon: Linkedin, label: "LinkedIn", value: "/in/harinarayanan-pari", href: "https://www.linkedin.com/in/harinarayanan-pari" },
-    { icon: Globe, label: "Portfolio", value: "hari-narayanan-portfolio.web.app", href: "https://hari-narayanan-portfolio.web.app/" },
     { icon: Github, label: "GitHub", value: "github.com/harinarayananpari", href: "https://github.com/" },
 ];
 export function Contact() {
